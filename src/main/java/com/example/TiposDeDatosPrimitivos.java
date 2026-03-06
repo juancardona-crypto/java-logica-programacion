@@ -27,8 +27,8 @@ public class TiposDeDatosPrimitivos {
     }
     public static void demostrarCaracteres(){
 
-        char letra = 'A'; // Un solo carácter entre comillas simples
-        char codigoAscii = 65; // También acepta el valor numérico ASCII
+        char letra = 'A'; 
+        char codigoAscii = 65; 
 
         System.out.println("Char: " + letra + " (ASCII: " + (int) letra + ")");
 
@@ -43,4 +43,24 @@ public class TiposDeDatosPrimitivos {
 
     }
 
+    public static void demostrarValoresPorDefecto() {
+        
+        byte b = 0;           
+        short s = 0;
+        int i = 0;
+        long l = 0L;
+        float f = 0.0F;
+        double d = 0.0;
+        char c = ' '; 
+        boolean bool = false;
+
+        System.out.println("byte por defecto:    " + b);
+        System.out.println("short por defecto:   " + s);
+        System.out.println("int por defecto:     " + i);
+        System.out.println("long por defecto:    " + l);
+        System.out.println("float por defecto:   " + f);
+        System.out.println("double por defecto:  " + d);
+        System.out.println("char por defecto:    " + c + " (código Unicode 0)");
+        System.out.println("boolean por defecto: " + bool);
+    }
 }
