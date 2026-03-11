@@ -17,17 +17,18 @@ public class ManejoBasicoExcepciones {
     }
 
     public static void ejemploTryCatchInput() {
-        Scanner scanner = new Scanner(System.in);
-        try {
-            System.out.print("Ingrese un número entero: ");
-            int numero = scanner.nextInt();
-            System.out.println("Número ingresado: " + numero);
-        } catch (InputMismatchException e) {
-            System.out.println("Error: Debe ingresar un número entero válido");
+        try (Scanner scanner = new Scanner(System.in)) {
+            try {
+                System.out.print("Ingrese un número entero: ");
+                int numero = scanner.nextInt();
+                System.out.println("Número ingresado: " + numero);
+            } catch (InputMismatchException e) {
+                System.out.println("Error: Debe ingresar un número entero válido");
+            }
         }
     }
 
-    public static void ejemploTryCatchFinally() {
+    public static void ejemploBloqueFinally() {
         Scanner scanner = new Scanner(System.in);
         try {
             System.out.print("Ingrese edad: ");

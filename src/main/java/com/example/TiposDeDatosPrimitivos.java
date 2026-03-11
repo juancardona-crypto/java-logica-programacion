@@ -3,10 +3,10 @@ package com.example;
 public class TiposDeDatosPrimitivos {
     public static void demostrarEnteros(){
 
-        byte numeroMuyPequeno = 127; // 8 bits (-128 a 127)
-        short numeroPequeno = 32000; // 16 bits
-        int numeroEntero = 2147483647; // 32 bits (El más usado para enteros)
-        long numeroLargo = 9223372036854775807L; // 64 bits (Requiere sufijo L)
+        byte numeroMuyPequeno = 127; 
+        short numeroPequeno = 32000; 
+        int numeroEntero = 2147483647;
+        long numeroLargo = 9223372036854775807L; 
 
         System.out.println("Byte: " + numeroMuyPequeno);
         System.out.println("Short: " + numeroPequeno);
@@ -18,8 +18,8 @@ public class TiposDeDatosPrimitivos {
 
     public static void demostrarFlotantes(){
 
-        float decimalCorto = 3.1416f; // 32 bits (Requiere sufijo f)
-        double decimalLargo = 3.14159265359; // 64 bits (El estándar para decimales)
+        float decimalCorto = 3.1416f; 
+        double decimalLargo = 3.14159265359; 
 
         System.out.println("Float: " + decimalCorto);
         System.out.println("Double: " + decimalLargo);
@@ -51,7 +51,7 @@ public class TiposDeDatosPrimitivos {
         long l = 0L;
         float f = 0.0F;
         double d = 0.0;
-        char c = ' '; 
+        char c = 0000; 
         boolean bool = false;
 
         System.out.println("byte por defecto:    " + b);
@@ -60,7 +60,7 @@ public class TiposDeDatosPrimitivos {
         System.out.println("long por defecto:    " + l);
         System.out.println("float por defecto:   " + f);
         System.out.println("double por defecto:  " + d);
-        System.out.println("char por defecto:    " + c + " (código Unicode 0)");
+        System.out.println("char por defecto:    " + c);
         System.out.println("boolean por defecto: " + bool);
     }
 }

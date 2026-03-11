@@ -62,10 +62,10 @@ public class Main {
         // ManipulacionCadenas.demostrarInmutabilidad();
         // ManipulacionCadenas.usarStringBuilder();
 
-        ManejoBasicoExcepciones.ejemploTryCatchFinally();
+        ManejoBasicoExcepciones.ejemploBloqueFinally();
         ManejoBasicoExcepciones.ejemploTryCatchDivision();
-        ManejoBasicoExcepciones.ejemploTryCatchInput();
         ManejoBasicoExcepciones.evitarCierrePrograma();
+        ManejoBasicoExcepciones.ejemploTryCatchInput();
 
 
 
